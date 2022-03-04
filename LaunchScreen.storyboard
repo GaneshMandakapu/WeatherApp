@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dark_background" translatesAutoresizingMaskIntoConstraints="NO" id="NYG-vf-1sz">
+                                <rect key="frame" x="0.0" y="444" width="414" height="452"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="light_background" translatesAutoresizingMaskIntoConstraints="NO" id="NGq-F9-IUn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="318"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🌧Weather Application🔆🌎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tyV-kh-zqU">
+                                <rect key="frame" x="0.0" y="370" width="414" height="70"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="contentStretch" x="0.050000000000000003" y="1" width="1" height="1"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="placeholderTextColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.70131673572929443" green="0.99180707482346064" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="NYG-vf-1sz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="GhH-G8-Ta9"/>
+                            <constraint firstItem="NGq-F9-IUn" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HLi-6Y-IHJ"/>
+                            <constraint firstItem="NGq-F9-IUn" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SP8-Rr-HU6"/>
+                            <constraint firstItem="tyV-kh-zqU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="WId-Jl-UBY"/>
+                            <constraint firstItem="tyV-kh-zqU" firstAttribute="top" secondItem="NGq-F9-IUn" secondAttribute="bottom" constant="8" id="b2u-0J-WfX"/>
+                            <constraint firstAttribute="bottom" secondItem="NYG-vf-1sz" secondAttribute="bottom" id="f0z-RH-uJE"/>
+                            <constraint firstItem="NYG-vf-1sz" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="jNY-rH-lh4"/>
+                            <constraint firstItem="NYG-vf-1sz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mdn-VN-XNc"/>
+                            <constraint firstItem="NYG-vf-1sz" firstAttribute="top" secondItem="tyV-kh-zqU" secondAttribute="bottom" constant="4" id="nDq-dj-4Vx"/>
+                            <constraint firstItem="tyV-kh-zqU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="naQ-oG-A40"/>
+                            <constraint firstItem="NGq-F9-IUn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sb3-FY-Q9P"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NGq-F9-IUn" secondAttribute="bottom" constant="500" id="va7-tk-KS4"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dark_background" width="836" height="661"/>
+        <image name="light_background" width="662" height="662"/>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
